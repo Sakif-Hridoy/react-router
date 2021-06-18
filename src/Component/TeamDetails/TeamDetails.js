@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import { faCalendarPlus, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './TeamDetails.css';
-import '@fortawesome/free-brands-svg-icons'; 
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import maleImg from "../../../src/male.png"
 import femaleImg from "../../../src/female.png";
 
@@ -46,17 +46,17 @@ const TeamDetails = () => {
                 <p className="description-para"><small>{strDescriptionEN}</small></p>
                 <p className="description-para"><small>{strDescriptionES}</small></p>
                 <div className="d-flex justify-content-center">
-                    <h2 className="icons">    
-                        <a href={`https://${strFacebook}`}></a>
+                <h2 className="icons">    
+                        <a href={`https://${strFacebook}`}><FontAwesomeIcon icon = {faFacebook} /></a>
                     </h2>
                     <h2 className="icons">
-                        <a href={`https://${strTwitter}`}></a>
+                        <a href={`https://${strTwitter}`}><FontAwesomeIcon icon = {faTwitter} /></a>
                     </h2>
                     <h2 className="icons">
-                        <a href={`https://${strInstagram}`}></a>
+                        <a href={`https://${strInstagram}`}><FontAwesomeIcon icon = {faInstagram} /></a>
                     </h2>
                     <h2 className="icons">
-                        <a href={`https://${strYoutube}`}></a>
+                        <a href={`https://${strYoutube}`}><FontAwesomeIcon icon = {faYoutube} /></a>
                     </h2>
                 </div>
             </div>
