@@ -16,7 +16,7 @@ const Home = () => {
       
     },[])
     return (
-        <div className="row main-team-container">
+        <div className="row team-container">
             <Header></Header>
             {
                 teams.map(team => <TeamList team={team}></TeamList>)

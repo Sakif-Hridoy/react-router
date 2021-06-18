@@ -5,7 +5,9 @@
 .team-card {
     margin: 10px 0;
     padding: 5px 0;
-    background-color: aqua;
+    /* background-color:#7209b7; */
+    /* background-color:linear-gradient(120degree,#0E0A2A); */
+    background-image: linear-gradient(180deg, #5fc2e0, #214550);
 }
 .team-card img {
     width: 35%;
