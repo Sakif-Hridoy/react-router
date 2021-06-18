@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Home from './Component/Home/Home';
+import NotFound from './Component/NotFound/NotFound';
+import TeamList from './Component/TeamList/TeamList';
+import TeamDetails from './Component/TeamDetails/TeamDetails';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       {/* Banner Section */}
+       {/* Banner Section */}
+
+
+{/* ============== */}
+       {/* Routes */}
+
+
+       <Router>
+         <Switch>
+           <Route path="/home">
+             <Home></Home>
+           </Route>
+           <Route exact path="/">
+            <Home></Home>
+           </Route>
+           <Route path="/team/:teamId">
+          <TeamDetails></TeamDetails>
+        </Route>
+           <Route path="*">
+            <NotFound></NotFound>
+           </Route>
+         </Switch>
+       </Router>
+       <TeamList></TeamList>
+       
+
+
     </div>
+
   );
 }
 

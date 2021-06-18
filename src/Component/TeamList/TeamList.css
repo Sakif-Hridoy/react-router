@@ -1,0 +1,13 @@
+.teams-container {
+    width: 28%;
+    margin: auto;
+}
+.team-card {
+    margin: 10px 0;
+    padding: 5px 0;
+    background-color: aqua;
+}
+.team-card img {
+    width: 35%;
+    margin: auto;
+}

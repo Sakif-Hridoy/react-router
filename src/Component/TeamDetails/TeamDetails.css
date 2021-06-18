@@ -1,0 +1,22 @@
+.team-info-container {
+    background-image: linear-gradient(180deg, lightblue, greenyellow);
+}
+.banner-img {
+    width: 100%;
+}
+.team-info {
+    width: 100%;
+}
+.team-player-img {
+    width: 75%;
+    padding: 5px;
+}
+.icons {
+    cursor: pointer;
+    margin: 0 10px 14px 10px;
+    padding: 0 7px;
+}
+.description-para {
+    padding: 10px;
+    text-align: justify;
+}
